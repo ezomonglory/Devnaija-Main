@@ -1,0 +1,1079 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>
+			Devnaija | coding and financial literacy school For Kids and Adults | located at 13 joseph
+			street, opebi ikeja,Lagos, Nigeria
+		</title>
+        <meta name="description" content="Coding and financial literacy school For Kids and Adults in Lagos, Nigeria"/>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/386ad145b9.js" crossorigin="anonymous"></script>
+        <script src="./TW-ELEMENTS-PATH/dist/js/index.min.js"></script>
+        <link rel="shortcut icon" href="./src/image/logo.png" type="image/x-icon">
+		<link href="/dist/output.css" rel="stylesheet" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tw-elements/dist/css/index.min.css" />
+        <script src="https://cdn.tailwindcss.com"></script>
+
+	</head>
+
+	<body >
+		<!-- header -->
+		<div class=" darkBlue bg-white block z-40 w-full fixed shadow-sm" id="head">
+			<div class="flex justify-between w-full items-center p-[.5rem] px-[2rem] mx-auto">
+				<img src="./src/image/logo.png" alt="Company logo" height="70px" width="70px" />
+
+				<div class="menu block md:hidden">
+					<svg
+						xmlns="http://www.w3.org/2000/svg"
+						fill="none"
+						viewBox="0 0 24 24"
+						stroke-width="1.5"
+						stroke="currentColor"
+						class="w-8 h-8 orange cursor-pointer"
+					>
+						<path
+							stroke-linecap="round"
+							stroke-linejoin="round"
+							d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+						/>
+					</svg>
+				</div>
+
+				<div class="hidden" id="cancel">
+					<svg
+						xmlns="http://www.w3.org/2000/svg"
+						fill="none"
+						viewBox="0 0 24 24"
+						stroke-width="1.5"
+						stroke="currentColor"
+						class="w-8 h-8 orange cursor-pointer"
+					>
+						<path
+							stroke-linecap="round"
+							stroke-linejoin="round"
+							d="M6 18L18 6M6 6l12 12"
+						/>
+					</svg>
+				</div>
+
+				<div class="md:w-[30rem] lg:w-[40rem] hidden md:block darkBlue mt-4">
+					<ol class="flex justify-between">
+						<a href="./index.html" class="overflow-hidden w-[3rem]" id="home">
+							<li class="cursor-pointer uppercase linhov">Home</li>
+                            <div class="h-[2px] line w-[5rem] bg-orange"></div>
+						</a>
+						<div class="relative group cursor-pointer h-[3rem] ">
+                            <div class="flex space-x-2 items-center justify-between">
+                                <p>PROGRAM</p><i class="fa-solid fa-chevron-down"></i>
+                            </div>
+                            <div class="absolute top-8 left-[-2rem] bgDark text-white rounded-lg  w-[20rem] p-4 hidden group-hover:flex flex-col gap-4 cursor-pointer">
+                                <a href="./BootCamp.html" class="a">Summer Coding Bootcamp(Kids)</a>
+                                <a href="./Adult.html" class="a">Adult Programs</a>
+                            </div>
+                        </div>
+						 <a href="./devnaija_blog.html" class="overflow-hidden w-[4rem]">
+                            <li class="cursor-pointer uppercase linhov">BLOG</li>
+                            <div class="h-[2px] line w-[5rem] bg-orange"></div>
+                        </a>
+                       
+						<a href="./About.html" class="overflow-hidden w-[4rem]">
+							<li class="cursor-pointer uppercase linhov">About</li>
+                            <div class="h-[2px] line w-[5rem] bg-orange"></div>
+						</a>
+
+                        <a href="./Contact.html" class="overflow-hidden w-[5rem]">
+							<li class="cursor-pointer uppercase linhov">Contact</li>
+                            <div class="h-[2px] linn w-[5rem] bg-orange"></div>
+						</a>
+					</ol>
+				</div>
+			</div>
+
+			<div class="flex-col gap-4 p-4 hidden text-white bgDark" id="nav" style="list-style: none; ">
+				<a href="./index.html " id="home">
+                    <li class="cursor-pointer a uppercase">Home</li>
+                </a>
+                
+                   <div class="relative ">
+                    <input type="checkbox"  id="check" class="hidden" />
+                    <div class="flex space-x-2 items-center justify-between hov" id="sm">
+                        <p class="cursor-pointer  a uppercase">PROGRAM</p><i class="fa-solid fa-chevron-down mr-[2rem]"></i>
+                    </div>
+                    <div class="hidden bgDark text-white rounded-lg  w-[20rem] p-4  flex-col gap-4 cursor-pointer" id="sh">
+                         <a href="./BootCamp.html" class="a">Summer Coding Bootcamp(Kids)</a>
+                        <a href="./Adult.html" class="a">Adult Programs</a>
+                    </div>
+                   </div>                
+                  <a href="./devnaija_blog.html">
+                <li class="cursor-pointer a uppercase">Blog</li>    
+                </a>
+                <a href="./About.html ">
+                    <li class="cursor-pointer a uppercase">About us</li>
+                </a>
+
+                <a href="./Contact.html ">
+                    <li class="cursor-pointer a uppercase">Contact</li>
+                </a>
+			</div>
+		</div>
+
+        <!-- End Header -->
+
+		<main class="flex flex-col gap-4">
+			<!-- homepage -->
+			<div class="h-screen w-full  flex items-center justify-center" style="background: linear-gradient(
+                to bottom,
+                rgba(0, 0, 0, 0.561),
+                rgba(0, 0, 0, 0.524)
+            ),
+            url('./src/image/jem.jpeg');
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        background-size: cover;
+        object-fit: center;
+        background-position: center;">
+        <!-- Carousel -->
+        <div id="carouselExampleSlidesOnly" class="carousel slide relative pt-24" data-bs-ride="carousel">
+            <div class="carousel-inner relative w-full overflow-hidden">
+              <div class="carousel-item active relative float-left w-full">
+                <div class="text-center flex flex-col gap-4">
+					<h1 class="text-center text-white w-full text-[1.5rem] md:text-[2rem] ">
+						DEVNAIJA ACADEMY<br />
+						CODING AND FINANCIAL LITERACY SCHOOL
+					</h1>
+					<p class="text-white">
+						Physical (In-person) and Virtual (Online) Coding Classes for Kids
+						and Adults aged 6-16 and 17+ respectively.
+					</p>
+
+					<a href="/Register.html"><div
+						class="text-center py-4 px-8 bg-orange rounded-lg cursor-pointer text-white w-[70%] mx-auto hover:scale-105 active:scale-95"
+					>
+						Get Started For Free
+					</div></a>
+				</div>
+              </div>
+              <div class="carousel-item relative float-left w-full">
+                <div class="text-center flex flex-col gap-4">
+					<h1 class="text-center text-white w-full text-[1.5rem] md:text-[2rem] ">
+						WEEKEND CLASSES
+					</h1>
+					<p class="text-white">
+						Physical (In-person) and Virtual (Online) Coding Classes
+					</p>
+
+					<a href="/Register.html"><div
+						class="text-center py-4 px-8 bg-orange rounded-lg cursor-pointer text-white w-[70%] mx-auto hover:scale-105 active:scale-95"
+					>
+						Get Started For Free
+					</div></a>
+				</div>
+              </div>
+              <div class="carousel-item relative float-left w-full">
+                <div class="text-center flex flex-col gap-4">
+					<h1 class="text-center text-white w-full text-[1.5rem] md:text-[2rem] ">
+						ADULT CLASSES
+					</h1>
+					<p class="text-white">
+						Physical (In-person) and Virtual (Online) Coding Classes 
+					</p>
+
+					<a href="/Register.html"><div
+						class="text-center py-4 px-8 bg-orange rounded-lg cursor-pointer text-white w-[70%] mx-auto hover:scale-105 active:scale-95"
+					>
+						Get Started For Free
+					</div></a>
+				</div>
+              </div>
+
+              <div class="carousel-item relative float-left w-full">
+                <div class="text-center flex flex-col gap-4">
+					<h1 class="text-center text-white w-full text-[1.5rem] md:text-[2rem] ">
+						SUMMER BOOTCAMP CLASSES
+					</h1>
+					<p class="text-white">
+						Physical (In-person) and Virtual (Online) Coding Classes 
+					</p>
+
+					<a href="/Register.html"><div
+						class="text-center py-4 px-8 bg-orange rounded-lg cursor-pointer text-white w-[70%] mx-auto hover:scale-105 active:scale-95"
+					>
+						Get Started For Free
+					</div></a>
+				</div>
+              </div>
+            </div>
+          </div>
+          <!-- End carousel -->
+
+          <!-- <div style="background-image: url('./src/image/jem.jpeg') ; background-size: cover; background-position: center;" class="h-[70vh] w-full rounded-lg">
+
+          </div> -->
+
+				<!-- <div class="text-center flex flex-col gap-4">
+					<h1 class="text-center text-white w-full text-[1.5rem] md:text-[2rem] ">
+						DEVNAIJA ACADEMY<br />
+						CODING AND FINANCIAL LITERACY SCHOOL
+					</h1>
+					<p class="text-white">
+						Physical (In-person) and Virtual (Online) Coding Classes for Kids
+						and Adults aged 6-16 and 17+ respectively.
+					</p>
+
+					<a href="/Register.html"><div
+						class="text-center py-4 px-8 bg-orange rounded-lg cursor-pointer text-white w-[80%] md:w-[30%] mx-auto hover:scale-105 active:scale-95"
+					>
+						Get Started For Free
+					</div></a>
+				</div> -->
+			</div>
+			<!-- end homepage -->
+			<!-- Classes -->
+			<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-16 md:gap-8 m-12 reveal ">
+				<div
+					class="w-full rounded-lg p-4 h-full flex flex-col gap-4 items-center justify-center shadow-md shadow-gray-300 bottom"
+				>
+					<div
+						class="h-16 w-16 rounded-full bg-orange text-white p-4 flex items-center justify-center"
+					>
+						<svg
+							xmlns="http://www.w3.org/2000/svg"
+							viewBox="0 0 24 24"
+							fill="currentColor"
+							class="w-12 h-12"
+						>
+							<path
+								d="M21.731 2.269a2.625 2.625 0 00-3.712 0l-1.157 1.157 3.712 3.712 1.157-1.157a2.625 2.625 0 000-3.712zM19.513 8.199l-3.712-3.712-12.15 12.15a5.25 5.25 0 00-1.32 2.214l-.8 2.685a.75.75 0 00.933.933l2.685-.8a5.25 5.25 0 002.214-1.32L19.513 8.2z"
+							/>
+						</svg>
+					</div>
+					<h1 class="capitalize darkBlue text-[1.2rem] font-bold font">
+						1:1 Private Class
+					</h1>
+				</div>
+				<div
+					class="w-full rounded-lg p-4 h-full flex flex-col gap-4 items-center justify-center shadow-md shadow-gray-300 bottom"
+				>
+					<div
+						class="h-16 w-16 rounded-full bg-orange text-white p-4 flex items-center justify-center"
+					>
+						<svg
+							xmlns="http://www.w3.org/2000/svg"
+							viewBox="0 0 24 24"
+							fill="currentColor"
+							class="w-12 h-12"
+						>
+							<path
+								fill-rule="evenodd"
+								d="M8.25 6.75a3.75 3.75 0 117.5 0 3.75 3.75 0 01-7.5 0zM15.75 9.75a3 3 0 116 0 3 3 0 01-6 0zM2.25 9.75a3 3 0 116 0 3 3 0 01-6 0zM6.31 15.117A6.745 6.745 0 0112 12a6.745 6.745 0 016.709 7.498.75.75 0 01-.372.568A12.696 12.696 0 0112 21.75c-2.305 0-4.47-.612-6.337-1.684a.75.75 0 01-.372-.568 6.787 6.787 0 011.019-4.38z"
+								clip-rule="evenodd"
+							/>
+							<path
+								d="M5.082 14.254a8.287 8.287 0 00-1.308 5.135 9.687 9.687 0 01-1.764-.44l-.115-.04a.563.563 0 01-.373-.487l-.01-.121a3.75 3.75 0 013.57-4.047zM20.226 19.389a8.287 8.287 0 00-1.308-5.135 3.75 3.75 0 013.57 4.047l-.01.121a.563.563 0 01-.373.486l-.115.04c-.567.2-1.156.349-1.764.441z"
+							/>
+						</svg>
+					</div>
+					<h1 class="capitalize darkBlue text-[1.2rem] font-bold font">
+						Group Class
+					</h1>
+				</div>
+
+				<div
+					class="w-full rounded-lg p-4 h-full flex flex-col gap-4 items-center justify-center shadow-md shadow-gray-300 top"
+				>
+					<div
+						class="h-16 w-16 rounded-full bg-orange text-white p-4 flex items-center justify-center"
+					>
+						<svg
+							xmlns="http://www.w3.org/2000/svg"
+							viewBox="0 0 24 24"
+							fill="currentColor"
+							class="w-12 h-12"
+						>
+							<path
+								fill-rule="evenodd"
+								d="M3 2.25a.75.75 0 000 1.5v16.5h-.75a.75.75 0 000 1.5H15v-18a.75.75 0 000-1.5H3zM6.75 19.5v-2.25a.75.75 0 01.75-.75h3a.75.75 0 01.75.75v2.25a.75.75 0 01-.75.75h-3a.75.75 0 01-.75-.75zM6 6.75A.75.75 0 016.75 6h.75a.75.75 0 010 1.5h-.75A.75.75 0 016 6.75zM6.75 9a.75.75 0 000 1.5h.75a.75.75 0 000-1.5h-.75zM6 12.75a.75.75 0 01.75-.75h.75a.75.75 0 010 1.5h-.75a.75.75 0 01-.75-.75zM10.5 6a.75.75 0 000 1.5h.75a.75.75 0 000-1.5h-.75zm-.75 3.75A.75.75 0 0110.5 9h.75a.75.75 0 010 1.5h-.75a.75.75 0 01-.75-.75zM10.5 12a.75.75 0 000 1.5h.75a.75.75 0 000-1.5h-.75zM16.5 6.75v15h5.25a.75.75 0 000-1.5H21v-12a.75.75 0 000-1.5h-4.5zm1.5 4.5a.75.75 0 01.75-.75h.008a.75.75 0 01.75.75v.008a.75.75 0 01-.75.75h-.008a.75.75 0 01-.75-.75v-.008zm.75 2.25a.75.75 0 00-.75.75v.008c0 .414.336.75.75.75h.008a.75.75 0 00.75-.75v-.008a.75.75 0 00-.75-.75h-.008zM18 17.25a.75.75 0 01.75-.75h.008a.75.75 0 01.75.75v.008a.75.75 0 01-.75.75h-.008a.75.75 0 01-.75-.75v-.008z"
+								clip-rule="evenodd"
+							/>
+						</svg>
+					</div>
+					<h1 class="capitalize darkBlue text-[1.2rem] font-bold font">
+						School Club
+					</h1>
+				</div>
+				<div
+					class="w-full rounded-lg p-4 h-full flex flex-col gap-4 items-center justify-center shadow-md shadow-gray-300 top"
+				>
+					<div
+						class="h-16 w-16 rounded-full bg-orange text-white p-4 flex items-center justify-center"
+					>
+						<svg
+							xmlns="http://www.w3.org/2000/svg"
+							viewBox="0 0 24 24"
+							fill="currentColor"
+							class="w-12 h-12"
+						>
+							<path
+								fill-rule="evenodd"
+								d="M2.25 5.25a3 3 0 013-3h13.5a3 3 0 013 3V15a3 3 0 01-3 3h-3v.257c0 .597.237 1.17.659 1.591l.621.622a.75.75 0 01-.53 1.28h-9a.75.75 0 01-.53-1.28l.621-.622a2.25 2.25 0 00.659-1.59V18h-3a3 3 0 01-3-3V5.25zm1.5 0v7.5a1.5 1.5 0 001.5 1.5h13.5a1.5 1.5 0 001.5-1.5v-7.5a1.5 1.5 0 00-1.5-1.5H5.25a1.5 1.5 0 00-1.5 1.5z"
+								clip-rule="evenodd"
+							/>
+						</svg>
+					</div>
+					<h1 class="capitalize darkBlue text-[1.2rem] font-bold font">
+						Online Class
+					</h1>
+				</div>
+			</div>
+
+			<!-- End of Classes -->
+			<!-- start -->
+
+			<div class="bg-white p-2 lg:p-12 flex flex-col gap-4  text-[1.3rem] w-[90%] mx-auto" style="box-shadow:rgba(172, 172, 172, 0.753) 5px 1px 10px  ;">
+				<h1 class=" text-[1.5rem] md:text-[2rem] font-bold">Start Coding Now!</h1>
+				<p>
+					We teach kids Web Development, Games, and Robotics. We raise children
+					who are sound in computer technological usage (coding) with adequate
+					financial knowledge.
+				</p>
+				<p>
+					in this digital world, children need to be taught early the use of
+					computer codes in other to solve problem, create better chances for
+					their future, and taught how to use their finances properly as they
+					grow.
+				</p>
+				<p>
+					Devnaija Academy will help raise children who are responsible, who
+					creates their own games using computer codes, creating apps, learn
+					basics of building robots and creating websites. we also teach them
+					what to do with the money that comes into their hands and
+					entrepreneural skills
+				</p>
+				<h2 class="text-[1.2rem] font-bold">
+					Adults can learn frontend and backend for web development at
+					affordable price too.
+				</h2>
+				<a href="./Register.html" class="w-full"><div
+					class="text-center py-2 px-4 bg-orange rounded-lg cursor-pointer text-white w-[10rem] hover:scale-105 active:scale-95 mx-auto md:mx-0 text-[1.2rem] mt-4 "
+				>
+					Get Started</a>
+				</div>
+			</div>
+			<!-- end of start -->
+			<!-- Trending -->
+			<div
+				class="lg:w-[90%] mx-auto md:w-[70%] m-12 flex flex-col gap-4 w-full"
+                
+			>
+				<h1 class="text-[1.2rem] md:text-[2rem] font-bold text-center mb-4 darkBlue font">
+					OUR TRENDING PROGRAMS.
+				</h1>
+
+				<div
+					class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 justify-center items-center gap-16 md:gap-6 w-full overflow-hidden "
+                    
+				>
+					<div
+						class="h-[18rem]  w-[80%] md:w-[100%] flex flex-col justify-evenly rounded-md  items-center mx-auto p-2  trend left"
+						style="box-shadow:rgba(172, 172, 172, 0.753) 5px 1px 10px  ;"
+					>
+						<h2
+							class="text-center uppercase darkBlue text-[1rem] leading-[1.5rem] font-[500]"
+						>
+							CODING & FINANCIAL LITERACY CLASSES ONLINE & ONSITE (AGES 7 TO 16)
+						</h2>
+						<a href="./Register.html" class="w-full"><div
+							class="text-center py-2 px-4 bg-orange rounded-lg cursor-pointer text-white w-[50%] mx-auto hover:scale-105 active:scale-95"
+						>
+							Enroll.
+						</div></a>
+					</div>
+
+					<div
+						class="h-[18rem] w-[80%] md:w-[100%] flex flex-col justify-evenly rounded-md shadow-sm shadow-gray-30 0 items-center mx-auto p-2 left"
+                        style="box-shadow:rgba(172, 172, 172, 0.753) 5px 1px 10px  ;"
+
+					>
+						<h2
+							class="text-center uppercase darkBlue text-[1rem] leading-[1.5rem] font-[500]"
+						>
+							SUMMER ROBOTICS AND CODING BOOTCAMP ONLINE & ONSITE (AGES 7 TO 16)
+						</h2>
+                        <a href="./Register.html" class="w-full"><div
+                        class="text-center py-2 px-4 bg-orange rounded-lg cursor-pointer text-white w-[50%] mx-auto hover:scale-105 active:scale-95"
+                    >
+                        Enroll.
+                    </div></a>
+					</div>
+
+					<div
+						class="h-[18rem] w-[80%] md:w-[100%] flex flex-col justify-evenly rounded-md shadow-sm shadow-gray-30 0 items-center mx-auto p-2 trend right"
+                        style="box-shadow:rgba(172, 172, 172, 0.753) 5px 1px 10px  ;"
+
+					>
+						<h2
+							class="text-center uppercase darkBlue text-[1rem] leading-[1.5rem] font-[500]"
+						>
+							AFTER SCHOOL AND WEEKEND CODING AND ROBOTICS CLASSES ONLINE &
+							ONSITE (AGES 7 TO 16
+						</h2>
+						<a href="./Register.html" class="w-full"><div
+							class="text-center py-2 px-4 bg-orange rounded-lg cursor-pointer text-white w-[50%] mx-auto hover:scale-105 active:scale-95"
+						>
+							Enroll.
+						</div></a>
+					</div>
+
+					<div
+						class="h-[18rem] w-[80%] md:w-[100%] flex flex-col justify-evenly rounded-md shadow-sm shadow-gray-30 0 items-center mx-auto p-2 trend right"
+                        style="box-shadow:rgba(172, 172, 172, 0.753) 5px 1px 10px  ;"
+
+					>
+						<h2
+							class="text-center uppercase darkBlue text-[1rem] leading-[1.5rem] font-[500]"
+						>
+							FRONT END AND BACK END PROGRAM FOR ADULT (3 MONTHS)
+						</h2>
+                        <a href="./Register.html" class="w-full"><div
+                        class="text-center py-2 px-4 bg-orange rounded-lg cursor-pointer text-white w-[50%] mx-auto hover:scale-105 active:scale-95"
+                    >
+                        Enroll.
+                    </div>  </a>
+					</div>
+				</div>
+				<!-- <div
+					class="w-full md:p-12  p-4 pb-8 bg-white rounded-lg shadow-md shadow-gray-300 font flex flex-col gap-4 h-full"
+				>
+					<div class="md:p-8">
+                        <h1 class="text-[1.5rem] darkBlue mb-4 font-bold text-center">
+                            MOST DEMAND CURRICULUM + SKILL CERTIFICATION
+                        </h1>
+                        <p class="darkBlue text-[1.3rem] md:text-center ">
+                            Your student can get started into one of the hottest courses in
+                            coding, game dev, robotics, design, math, and more, boosting their
+                            portfolio with impressive projects and more.
+                        </p>
+                    </div>
+					<div class="relative w-full sm:h-[2rem] h-[1rem]">
+						<img src="./src/image/js.png" alt="coding" width="100%" />
+					</div>
+				</div> -->
+			</div>
+			<!-- End of Trending -->
+			<!-- <Rotate /> -->
+			<div class="grid grid-cols md:grid-cols-2 gap-8 md:gap-4 m-4 md:m-12">
+				<div
+					class="h-[350px] w-full rounded-lg flex flex-col justify-evenly items-center p-2 bg-black"
+					style="
+						background: linear-gradient(
+								to bottom,
+								rgba(0, 0, 0, 0.561),
+								rgba(0, 0, 0, 0.524)
+							),
+							url('./src/image/first.jfif');
+						background-repeat: no-repeat;
+						background-size: cover;
+						object-fit: contain;
+					"
+				>
+					<div class="flex flex-col gap-4">
+						<h1
+							class="text-white text-[1.5rem] text-center font-bold capitalize"
+						>
+							A memorable in-school or holiday bootcamp experience
+						</h1>
+						<p class="text-white text-center"></p>
+					</div>
+				</div>
+				<div
+					class="h-[350px] bg-black w-full rounded-lg flex flex-col justify-evenly items-center p-2 bg"
+					style="
+						background: linear-gradient(
+								to bottom,
+								rgba(0, 0, 0, 0.561),
+								rgba(0, 0, 0, 0.524)
+							),
+							url('./src/image/sec.jfif');
+						background-repeat: no-repeat;
+						background-size: cover;
+						object-fit: contain;
+					"
+				>
+					<div class="flex flex-col gap-4">
+						<h1
+							class="text-white text-[1.5rem] text-center font-bold capitalize"
+						>
+							Experienced & friendly Tutors
+						</h1>
+						<p class="text-white text-center">
+							Our Tutors are mission driven and passionate to see students
+							develop incredible innovation at an early age. They make classes
+							fun and exciting for our Students.
+						</p>
+					</div>
+				</div>
+				<div
+					class="h-[350px] bg-black w-full rounded-lg flex flex-col justify-evenly items-center p-2"
+					style="
+						background: linear-gradient(
+								to bottom,
+								rgba(0, 0, 0, 0.561),
+								rgba(0, 0, 0, 0.524)
+							),
+							url('./src/image/banner.jpg');
+						background-repeat: no-repeat;
+						background-size: cover;
+						object-fit: contain;
+					"
+				>
+					<div class="flex flex-col gap-4">
+						<h1
+							class="text-white text-[1.5rem] text-center font-bold capitalize"
+						>
+							Small Class Guarantee
+						</h1>
+						<p class="text-white text-center">
+							Students progress at their own pace with 1-on-1 or small-group
+							class.
+						</p>
+					</div>
+				</div>
+
+                <div
+					class="h-[350px] bg-black w-full rounded-lg flex flex-col justify-evenly items-center p-2"
+					style="
+						background: linear-gradient(
+								to bottom,
+								rgba(0, 0, 0, 0.561),
+								rgba(0, 0, 0, 0.524)
+							),
+							url('./src/image/third.jfif');
+						background-repeat: no-repeat;
+						background-size: cover;
+						object-fit: contain;
+					"
+				>
+					<div class="flex flex-col gap-4">
+						<h1
+							class="text-white text-[1.5rem] text-center font-bold capitalize"
+						>
+							Friendly Environment
+						</h1>
+						<p class="text-white text-center">
+							We Provide Convenient and Friendly environment for our Students.
+						</p>
+					</div>
+				</div>
+
+
+				<!-- <RotateCaed image="" head="" text="" /> -->
+			</div>
+
+			<!-- End rotate -->
+
+			<!-- <Engage /> -->
+			<div class="flex flex-col gap-8 md:gap-4 font">
+				<h1 class="text-[2rem] font-bold text-center mb-4 darkBlue">
+					Our Engagement Options (Virtual or Onsite)
+				</h1>
+
+				<div class="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-4 w-[90%] mx-auto">
+					<div
+						class="border border-black rounded-md p-4 grid grid-cols-1 md:grid-cols-2 items-center justify-center"
+					>
+						<div class="flex gap-2 items-center justify-center w-full">
+							<img src="./src/image/fin.jpeg" height="150px" width="150px" />
+							<hr class="bg-orange h-4" />
+						</div>
+						<div class="flex text-center flex-col gap-2 darkBlue w-full font">
+							<h1 class="text-[1.2rem] font-bold capitalize">
+								Our financial literacy classes for kids
+							</h1>
+							<p>
+								We groom kids to become better financial managers and develop
+								their entrepreneural skills.
+							</p>
+						</div>
+					</div>
+
+					<div
+						class="border border-black rounded-md p-4 grid grid-cols-1 md:grid-cols-2 items-center justify-center"
+					>
+						<div class="flex gap-2 w-full items-center justify-center">
+							<img src="./src/image/boy.jpg" height="200px" width="200px" />
+							<hr class="bg-orange h-4" />
+						</div>
+						<div class="flex text-center flex-col gap-2 darkBlue w-full">
+							<h1 class="text-[1.2rem] font-bold capitalize">
+								Our small-group classes
+							</h1>
+							<p>
+								We believe that through collaborations, ideas grow, that’s why
+								we host small group classes for our students.
+							</p>
+						</div>
+					</div>
+				</div>
+
+				<a href="./Register.html">
+                    <div
+					class="text-center py-4 px-8 bg-orange rounded-lg cursor-pointer text-white mx-auto hover:scale-105 active:scale-95 w-[15rem] mt-8"
+				>
+					Enroll for a class
+				</div>
+                </a>
+			</div>
+			<!-- End engage -->
+
+			<!-- Courses start -->
+			<div class="flex flex-col gap-[3rem] mt-4">
+				<div class="sm:w-[90%] mx-auto w-full flex flex-col gap-8">
+					<h1
+						class="text-[2rem] font-bold text-center mb-4 darkBlue capitalize font"
+					>
+						Courses for ages 7 - 12
+					</h1>
+					<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
+						<div
+							class="bg-white shadow-lg shadow-gray-200 mx-auto rounded-lg h-[20rem] w-[15rem] p-4 flex flex-col gap-4 items-center space-evenly scale"
+						>
+							<img src="./src/image/hc.png" height="300px" width="300px" />
+							<h1
+								class="uppercase darkBlue text-[1.2rem] text-center font-bold"
+							>
+								html & css
+							</h1>
+						</div>
+						<div
+							class="bg-white shadow-lg shadow-gray-200 mx-auto rounded-lg h-[20rem] w-[15rem] p-4 flex flex-col gap-4 items-center space-evenly scale"
+						>
+							<img src="./src/image/sc.png" height="300px" width="300px" />
+							<h1
+								class="uppercase darkBlue text-[1.2rem] text-center font-bold"
+							>
+								Scratch
+							</h1>
+						</div>
+						<div
+							class="bg-white shadow-lg shadow-gray-200 mx-auto rounded-lg h-[20rem] w-[15rem] p-4 flex flex-col gap-4 items-center space-evenly scale"
+						>
+							<img src="./src/image/fin.jpeg" class="h-[250px] w-[200px]" />
+							<h1
+								class="uppercase darkBlue text-[1.2rem] text-center font-bold"
+							>
+								Financial Literacy
+							</h1>
+						</div>
+						<div
+							class="bg-white shadow-lg shadow-gray-200 mx-auto rounded-lg h-[20rem] w-[15rem] p-4 flex flex-col gap-4 items-center space-evenly scale"
+						>
+							<img src="./src/image/rob.jpg" height="300px" width="300px" />
+							<h1
+								class="uppercase darkBlue text-[1.2rem] text-center font-bold"
+							>
+								Robotics
+							</h1>
+						</div>
+					</div>
+
+					<a href="./Register.html"><div
+						class="text-center py-4 px-8 bg-orange rounded-lg cursor-pointer text-white mx-auto hover:scale-105 active:scale-95 w-[15rem]"
+					>
+						Register for a class
+					</div></a>
+				</div>
+
+				<div class="sm:w-[90%] mx-auto w-full flex flex-col gap-8">
+					<h1
+						class="text-[2rem] font-bold text-center mb-4 darkBlue capitalize font"
+					>
+						Courses for ages 13-16
+					</h1>					
+						<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
+                            <div
+                                class="bg-white shadow-lg shadow-gray-200 mx-auto rounded-lg h-[20rem] w-[15rem] p-4 flex flex-col gap-4 items-center space-evenly scale"
+                            >
+                                <img src="./src/image/hc.png" height="300px" width="300px" />
+                                <h1
+                                    class="uppercase darkBlue text-[1.2rem] text-center font-bold"
+                                >
+                                    html & css
+                                </h1>
+                            </div>
+                            <div
+                                class="bg-white shadow-lg shadow-gray-200 mx-auto rounded-lg h-[20rem] w-[15rem] p-4 flex flex-col gap-4 items-center space-evenly scale"
+                            >
+                                <img src="./src/image/py.png" height="300px" width="300px" />
+                                <h1
+                                    class="uppercase darkBlue text-[1.2rem] text-center font-bold"
+                                >
+                                    Python
+                                </h1>
+                            </div>
+                            <div
+                                class="bg-white shadow-lg shadow-gray-200 mx-auto rounded-lg h-[20rem] w-[15rem] p-4 flex flex-col gap-4 items-center space-evenly scale"
+                            >
+                                <img src="./src/image/fin.jpeg" class="h-[210px] w-[250px]" />
+                                <h1
+                                    class="uppercase darkBlue text-[1.2rem] text-center font-bold"
+                                >
+                                    Financial Literacy
+                                </h1>
+                            </div>
+                            <div
+                                class="bg-white shadow-lg shadow-gray-200 mx-auto rounded-lg h-[20rem] w-[15rem] p-4 flex flex-col gap-4 items-center space-evenly scale"
+                            >
+                                <img src="./src/image/rob.jpg" height="300px" width="300px" />
+                                <h1
+                                    class="uppercase darkBlue text-[1.2rem] text-center font-bold"
+                                >
+                                    Robotics
+                                </h1>
+                            </div>
+                        </div>
+					</div>
+					<a href="./Register.html">
+                        <div
+						class="text-center py-4 px-8 bg-orange rounded-lg cursor-pointer text-white mx-auto hover:scale-105 active:scale-95 w-[15rem]"
+					>
+						Register for a class
+					</div>
+                    </a>
+				</div>
+
+                <div class="sm:w-[90%] mx-auto w-full flex flex-col gap-8 mt-10">
+					<h1
+						class="text-[2rem] font-bold text-center mb-4 darkBlue capitalize font"
+					>
+						Courses for ages 17+
+					</h1>					
+						<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
+                            <div
+                                class="bg-white shadow-lg shadow-gray-200 mx-auto rounded-lg h-[20rem] w-[15rem] p-4 flex flex-col gap-4 items-center space-evenly scale"
+                            >
+                                <img src="./src/image/py.png" height="300px" width="300px" />
+                                <h1
+                                    class="uppercase darkBlue text-[1.2rem] text-center font-bold"
+                                >
+                                    Python
+                                </h1>
+                            </div>
+                            <div
+                                class="bg-white shadow-lg shadow-gray-200 mx-auto rounded-lg h-[20rem] w-[15rem] p-4 flex flex-col gap-4 items-center space-evenly scale"
+                            >
+                                <img src="./src/image/fe.png" height="300px" width="300px" />
+                                <h1
+                                    class="uppercase darkBlue text-[1.2rem] text-center font-bold"
+                                >
+                                    Front-End
+                                </h1>
+                            </div>
+                            <div
+                                class="bg-white shadow-lg shadow-gray-200 mx-auto rounded-lg h-[20rem] w-[15rem] p-4 flex flex-col gap-4 items-center space-evenly scale"
+                            >
+                                <img src="./src/image/be.jpg" height="30300" width="3030x"/>
+                                <h1
+                                    class="uppercase darkBlue text-[1.2rem] text-center font-bold"
+                                >
+                                    Back-End
+                                </h1>
+                            </div>
+                            <div
+                                class="bg-white shadow-lg shadow-gray-200 mx-auto rounded-lg h-[20rem] w-[15rem] p-4 flex flex-col gap-4 items-center space-evenly scale"
+                            >
+                                <img src="./src/image/mam.png" height="300px" width="300px" />
+                                <h1
+                                    class="uppercase darkBlue text-[1.2rem] text-center font-bold"
+                                >
+                                    Full-Stack
+                                </h1>
+                            </div>
+                        </div>
+					</div>
+					<a href="./Register.html">
+                        <div
+						class="text-center py-4 px-8 bg-orange rounded-lg cursor-pointer text-white mx-auto hover:scale-105 active:scale-95 w-[15rem] mt-8"
+					>
+						Register for a class
+					</div>
+                    </a>
+				</div>
+
+			</div>
+
+			<!-- End courses -->
+
+            <!-- Events -->
+            <div class="grid grid-cols-1 md:grid-cols-2 p-4  gap-12 ">
+                <div class="lg:h-[40rem] w-full lg:w-[30rem] mx-auto flex flex-col gap-6 md:gap-2 bg-white shadow-md shadow-gray-400 text-center items-center p-4 justify-evenly rounded-lg">
+                    <div class="flex flex-col gap-8 md:gap-2 items-center justify-center">
+                        <img src="./src/image/codeclub.png" height="30%" width="30%" />
+                        <h1 class="font darkBlue text-[1.2rem] font-bold">CODER'S CLUB</h1>
+                    </div>
+
+                    <h1 class="darkBlue font-semibold text-[1.2rem] text-center">
+                        Devnaija Academy visits schools to raise a Community of budding coders.
+                    </h1>
+
+                    <div class="ml-4 flex flex-col gap-4">
+                        <div class="flex gap-2 darkBlue text-left items-center">
+                            <i class="fa-solid fa-circle-check darkBlue h-4 w-4"></i>
+                              <h2>coding skill cannot be learnt in a short period. to ensure the kids are grounded in it, We form coding clubs in their school to enable continous learning.</h2>
+                        </div>
+
+                        <div class="flex gap-2 darkBlue text-left items-center">
+                            <i class="fa-solid fa-circle-check darkBlue h-4 w-4"></i>
+                              <h2>Schools can take advantage of this to empower their students with coding and finanacial skills at affordable prices.</h2>
+                        </div>
+
+                    </div>
+
+                   <a href="./Register.html">
+                    <div
+                    class="text-center py-4 px-8 bg-orange rounded-lg cursor-pointer text-white mx-auto hover:scale-105 active:scale-95 w-[15rem] capitalize "
+                >
+                    Click Here to join
+                </div>
+                   </a>
+                </div>
+
+                <div class="lg:h-[40rem] w-full lg:w-[30rem] mx-auto flex flex-col gap-6 md:gap-2 bg-white shadow-md shadow-gray-400 items-center p-4 justify-evenly rounded-lg">
+                    <div class="flex flex-col gap-2 items-center justify-center">
+                        <img src="./src/image/money.png" height="30%" width="30%" />
+                        <h1 class="font darkBlue text-[1.2rem] font-bold">FINANCIAL LITERACY</h1>
+                    </div>
+
+                    <h1 class="darkBlue font-semibold text-[1.2rem] text-left">
+                        The children will be taught:
+                    </h1>
+
+                    <div class="ml-4 flex flex-col gap-4">
+                        <div class="flex gap-2 darkBlue text-left items-center">
+                            <i class="fa-solid fa-circle-check darkBlue h-4 w-4"></i>
+                              <h2>Earning, Saving, and Investing.</h2>
+                        </div>
+
+                        <div class="flex gap-2 darkBlue text-left items-center">
+                            <i class="fa-solid fa-circle-check darkBlue h-4 w-4"></i>
+                              <h2> How to understand the nature and use of money.</h2>
+                        </div>
+
+                        <div class="flex gap-2 darkBlue text-left items-center">
+                            <i class="fa-solid fa-circle-check darkBlue h-4 w-4"></i>
+                              <h2>The consequences of financial decisions.</h2>
+                        </div>
+
+                        <div class="flex gap-2 darkBlue text-left items-center">
+                            <i class="fa-solid fa-circle-check darkBlue h-4 w-4"></i>
+                              <h2>Entrepreneurship</h2>
+                        </div>
+
+                        <div class="flex gap-2 darkBlue text-left items-center">
+                            <i class="fa-solid fa-circle-check darkBlue h-4 w-4"></i>
+                              <h2>How to weigh risks and benefits.</h2>
+                        </div>  
+
+                        <div class="flex gap-2 darkBlue text-left items-center">
+                            <i class="fa-solid fa-circle-check darkBlue h-4 w-4"></i>
+                              <h2>Budgeting.</h2>
+                        </div>
+
+                   
+                    </div>
+
+                  <a href="./Register.html">
+                    <div
+                    class="text-center py-4 px-8 bg-orange rounded-lg cursor-pointer text-white mx-auto hover:scale-105 active:scale-95 w-[15rem] capitalize "
+                >
+                    Enroll your kid now!!!
+                </div>
+                  </a>
+                </div>
+
+
+            </div>
+            <!-- End of events -->
+
+            <!-- Whaatsapp Gif -->
+            <img src="./src/image/wat.gif" alt="whatsapp" class="whatsapp cursor-pointer" id="wat" />
+			<div class="chatbox-cont hidden">
+				<div class="chatbox-head">
+					<div class="logo">
+						<img
+							src="./src/image/whatsapp-logo-png-2273.png"
+							alt="whatsapp-logo"
+						/>
+					</div>
+					<div class="cancel-icon cursor-pointer">
+						<i class="fa-solid fa-circle-xmark"></i>
+					</div>
+				</div>
+				<div class="chatbox-body">
+					<div class="message-box">
+						<p>
+							Hello, Welcome To  Devnaija Academy, I am Yetunde. How may i
+							help you today?
+						</p>
+					</div>
+					<a href="https://wa.me/message/ZOED4Q5QXYBDC1" target="_blank">
+                        <div class="openchat-box">
+                            <p>Open Chat</p>
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </div>
+                    </a>
+				</div>
+			</div>
+
+              <!-- Classes in action -->
+        <div class="w-full mb-8">
+
+            <h1 class="uppercase text-center darkBlue font-bold text-[1.5rem] md:text-[2rem] ">classes in action</h1>
+            <div class="w-[90%] mx-auto md:h-[60vh] h-[40vh] rounded-lg overflow-hidden">
+                <iframe
+            class='w-full h-full rounded-lg'
+            title='video'
+            src='https://www.youtube.com/embed/TeO8ebBwJWY'
+        ></iframe>
+            </div>
+
+        </div>
+
+
+              <!-- Testimonies -->
+
+        <div class='w-[80%] mx-auto mt-8'>
+			<h1 class='capitalize darkBlue text-3xl font-bold text-center mb-12'>
+				TESTIMONIALS
+			</h1>
+
+			<div class=' grid grid-cols-1 lg:grid-cols-2 gap-x-8 gap-y-8 '>
+				<iframe
+					title='Mom'
+					src='https://www.youtube.com/embed/TmBT0V2JMh4'
+					class=' w-full rounded-lg mx-auto mb-4 h-[400px] '
+				></iframe>
+
+				<iframe
+					title='Mom'
+					src='https://www.youtube.com/embed/nEfNXtN_WfA'
+					class=' w-full mx-auto mb-4 h-[400px] rounded-lg '
+				></iframe>
+
+                <div class='lg:w-full w-full border border-black rounded-lg py-6 px-6 space-y-6'>
+                    <p>
+                        I registered my son for the devnaija academy summer training and in just the second week of the program instead of playing games with his phone, he now spends his time trying to build games. This academy has allowed him to channel all his energy into something beneficial to him, i am so happy with my decision to enroll him to devnaija academy, it was truly a revelation.
+                    </p>
+                    <div class='flex space-x-2'>
+                        <div class='rounded-full bg-gray-400 h-16 w-16 overflow-hidden'><img src="./src/image/Ester.jpeg" class="" /></div>
+                        <div>
+                            <h2 class='text-black text-lg font-bold darkBlue'>Mrs Esther</h2>
+                            <p class='text-gray-400'>Mother</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class='lg:w-full w-full border border-black rounded-lg py-6 px-6 space-y-6'>
+                    <p>
+                        Thank you at Devnaija for transforming my son, he is passionate about building games and assembling robots. He has started saving and spending his money wisely
+                    </p>
+                    <div class='flex space-x-2'>
+                        <div class='rounded-full bg-gray-400 h-16 w-16 overflow-hidden'><img src="" class="" /></div>
+                        <div>
+                            <h2 class='text-black text-lg font-bold darkBlue'>Mrs Ibukun K.</h2>
+                            <p class='text-gray-400'>Mother</p>
+                        </div>
+                    </div>
+                </div>
+								
+			</div>
+		</div>
+
+        <!-- End Testimonies -->
+
+
+      
+
+            <!-- Footer  -->
+
+            <div class="">                
+                <!-- second footer -->
+                <div class="bgDark grid grid-cols-1  space-y-8 md:space-x-8 md:space-y-0 md:flex justify-between lg:p-12 p-4">
+                   <div>
+                    <div>
+                        <h1 class="text-white font font-bold text-[1.5rem]">Contacts</h1>
+                        <hr class="bg-orange h-[7px] w-[4rem]" />
+                       </div>
+                    <div class="flex flex-col space-y-4 ">
+                   
+                    <div class="flex items-center space-x-2 mt-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 text-white">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z" />
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z" />
+                          </svg>
+                          
+                          <p class="text-white ">13, Joseph Street,(Off Opebi Link Bridge) <br/> Near Adebola House, Opebi, Ikeja Lagos</p>
+                     </div>
+                    <div class="flex items-center space-x-2 ">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 text-white">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M20.25 3.75v4.5m0-4.5h-4.5m4.5 0l-6 6m3 12c-8.284 0-15-6.716-15-15V4.5A2.25 2.25 0 014.5 2.25h1.372c.516 0 .966.351 1.091.852l1.106 4.423c.11.44-.054.902-.417 1.173l-1.293.97a1.062 1.062 0 00-.38 1.21 12.035 12.035 0 007.143 7.143c.441.162.928-.004 1.21-.38l.97-1.293a1.125 1.125 0 011.173-.417l4.423 1.106c.5.125.852.575.852 1.091V19.5a2.25 2.25 0 01-2.25 2.25h-2.25z" />
+                          </svg>
+                          
+                          <a href="tel:09152690938" class=""><p class="text-white fhov border-none  ">09152690938</p></a>
+                     </div>
+                    <div class="flex items-center space-x-2 ">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 text-white">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75" />
+                          </svg>
+                          
+                          <a href="mailto:support@devnaija.com" class="hov" ><p class="text-white fhov ">support@devnaija.com</p></a>
+                     </div>
+                  </div>
+                   </div>
+
+                    <div>
+                       <div>
+                        <h1 class="text-white font font-bold text-[1.5rem]">Quick Links</h1>
+                        <hr class="bg-orange h-[7px] w-[4rem]" />
+                       </div>
+
+                       <ul class="mt-4">
+                        <a href="./index.html"><li class="text-white fhov">Home</li></a id="home">
+                        <a href="./About.html"><li class="text-white fhov">About Us</li></a>
+                        
+                        <a href="./devnaija_blog.html"><li class="text-white fhov">Blog</li></a>
+                        <a href="./Contact.html"><li class="text-white fhov">Contact</li></a>
+                       </ul>
+                    </div>
+
+                    <div>
+                        <div>
+                         <h1 class="text-white font font-bold text-[1.5rem]">Social Links</h1>
+                         <hr class="bg-orange h-[7px] w-[4rem]" />
+                        </div>
+ 
+                        <ul class="mt-4">
+                            <a target="_blank " href="https://wa.me/message/ZOED4Q5QXYBDC1"><div class="flex space-x-2 items-center hov"><i class="fa-brands fa-whatsapp text-white"></i><li class="text-white fhov">Whatsapp</li></div></a>
+                            <a target="_blank " href="https://web.facebook.com/Devnaija-Academy-105338672274343"><div class="flex space-x-2 items-center hov"><i class="fa-brands fa-facebook text-white"></i><li class="text-white fhov">facebook</li></div></a>
+                            <a target="_blank " href="https://twitter.com/DevnaijaAcademy"><div class="flex space-x-2 items-center hov"><i class="fa-brands fa-twitter text-white"></i><li class="text-white fhov">twitter</li></div></a>
+                            <a target="_blank " href="http://www.linkedin.com/in/devnaija-academy-70300824b"><div class="flex space-x-2 items-center hov"><i class="fa-brands fa-linkedin text-white"></i><li class="text-white fhov">linkedin</li></div></a>  
+                            <a target="_blank " href="https://www.youtube.com/channel/UCUuyhAicO1OjEtosIkuWSvw"><div class="flex space-x-2 items-center hov"><i class="fa-brands fa-youtube text-white"></i><li class="text-white fhov">youtube</li></div></a>                     
+                        </ul>
+                     </div>
+                     
+                     
+                    </div>
+                </div>
+
+            <!-- End footer -->
+
+		</main>
+
+        <script src="https://cdn.jsdelivr.net/npm/tw-elements/dist/js/index.min.js"></script>
+		<script src="./index.js"></script>
+	</body>
+</html>

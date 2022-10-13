@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+       Blog | Coding and Financial Literacy School for Kids and Adults
+    </title>
+    <meta name="description" content="Coding and Financial Literacy School for Kids and Adults"
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/386ad145b9.js" crossorigin="anonymous"></script>
+    <link rel="shortcut icon" href="./src/image/logo.png" type="image/x-icon">
+    <link href="/dist/output.css" rel="stylesheet" />
+</head>
+<body>
+   <style>
+     .img-cont{
+        overflow: hidden;
+    }
+    .hove:hover div img{
+        transform: scale(1.3);
+        transition: ease-in-out .3s;
+    }
+
+    .hove{
+        height: 50vh;      
+    }
+
+    .hovee h3, .hovee p{
+        white-space: nowrap;        
+        text-overflow: ellipsis;        
+        overflow: hidden;
+    }
+
+    a{
+        text-decoration: none;
+        
+    }   
+   </style>
+
+    <!-- header -->
+		<div class=" darkBlue bg-white block z-40 w-full fixed shadow-sm" id="head">
+			<div class="flex justify-between w-full items-center p-[.5rem] px-[2rem] mx-auto">
+				<img src="./src/image/logo.png" alt="Company logo" height="70px" width="70px" />
+
+				<div class="menu block md:hidden">
+					<svg
+						xmlns="http://www.w3.org/2000/svg"
+						fill="none"
+						viewBox="0 0 24 24"
+						stroke-width="1.5"
+						stroke="currentColor"
+						class="w-8 h-8 orange cursor-pointer"
+					>
+						<path
+							stroke-linecap="round"
+							stroke-linejoin="round"
+							d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+						/>
+					</svg>
+				</div>
+
+				<div class="hidden" id="cancel">
+					<svg
+						xmlns="http://www.w3.org/2000/svg"
+						fill="none"
+						viewBox="0 0 24 24"
+						stroke-width="1.5"
+						stroke="currentColor"
+						class="w-8 h-8 orange cursor-pointer"
+					>
+						<path
+							stroke-linecap="round"
+							stroke-linejoin="round"
+							d="M6 18L18 6M6 6l12 12"
+						/>
+					</svg>
+				</div>
+
+				<div class="md:w-[30rem] lg:w-[40rem] hidden md:block darkBlue mt-4">
+					<ol class="flex justify-between">
+						<a href="./index.html" class="overflow-hidden w-[3rem]" id="home">
+							<li class="cursor-pointer uppercase linhov">Home</li>
+                            <div class="h-[2px] line w-[5rem] bg-orange"></div>
+						</a>
+						<div class="relative group cursor-pointer h-[3rem] ">
+                            <div class="flex space-x-2 items-center justify-between">
+                                <p>PROGRAM</p><i class="fa-solid fa-chevron-down"></i>
+                            </div>
+                            <div class="absolute top-8 left-[-2rem] bgDark text-white rounded-lg  w-[20rem] p-4 hidden group-hover:flex flex-col gap-4 cursor-pointer">
+                                <a href="./BootCamp.html" class="a">Summer Coding Bootcamp(Kids)</a>
+                                <a href="./Adult.html" class="a">Adult Programs</a>
+                            </div>
+                        </div>
+						 <a href="./devnaija_blog.html" class="overflow-hidden w-[4rem]">
+                            <li class="cursor-pointer uppercase linhov">BLOG</li>
+                            <div class="h-[2px] line w-[5rem] bg-orange"></div>
+                        </a>
+						<a href="./About.html" class="overflow-hidden w-[4rem]">
+							<li class="cursor-pointer uppercase linhov">About</li>
+                            <div class="h-[2px] line w-[5rem] bg-orange"></div>
+						</a>
+
+                        <a href="./Contact.html" class="overflow-hidden w-[5rem]">
+							<li class="cursor-pointer uppercase linhov">Contact</li>
+                            <div class="h-[2px] linn w-[5rem] bg-orange"></div>
+						</a>
+					</ol>
+				</div>
+			</div>
+
+			<div class="flex-col gap-4 p-4 hidden text-white bgDark" id="nav" style="list-style: none; ">
+				<a href="./index.html " id="home">
+                    <li class="cursor-pointer a uppercase">Home</li>
+                </a>
+                
+                   <div class="relative ">
+                    <input type="checkbox"  id="check" class="hidden" />
+                    <div class="flex space-x-2 items-center justify-between hov" id="sm">
+                        <p class="cursor-pointer  a uppercase">PROGRAM</p><i class="fa-solid fa-chevron-down mr-[2rem]"></i>
+                    </div>
+                    <div class="hidden bgDark text-white rounded-lg  w-[20rem] p-4  flex-col gap-4 cursor-pointer" id="sh">
+                         <a href="./BootCamp.html" class="a">Summer Coding Bootcamp(Kids)</a>
+                        <a href="./Adult.html" class="a">Adult Programs</a>
+                    </div>
+                   </div>                
+                  <a href="./devnaija_blog.html">
+                <li class="cursor-pointer a uppercase">Blog</li>    
+                </a>
+                <a href="./About.html ">
+                    <li class="cursor-pointer a uppercase">About us</li>
+                </a>
+
+                <a href="./Contact.html ">
+                    <li class="cursor-pointer a uppercase">Contact</li>
+                </a>
+			</div>
+		</div>
+
+        <!-- End Header -->
+<body>
+
+        
+       <!-- Main Start -->
+
+       <main class="pt-24 mb-12">
+
+                       <div class=" flex flex-col md:flex-row  md:p-0">                     
+                        <div class="w-full md:w-[40%] bgDark p-4 ">
+                            <h1 class="uppercase text-center mb-4 text-[1.2rem] md:text-[1.5rem] text-white">OUR RECENT STORIES</h1>
+                            <ul class="space-y-4 flex flex-col">
+                                <a href="#">
+                                    <li class="text-[0.9rem] md:text-[1rem] capitalize text-white list-none text-left hov">Why coding</li>
+                                </a>
+                                <a href="">
+                                    <li class="text-[0.9rem] md:text-[1rem] capitalize text-white list-none text-left hov">How does coding help us</li>
+                                </a>
+                                <a href="">
+                                    <li class="text-[0.9rem] md:text-[1rem] capitalize text-white list-none text-left hov">Who is a Programmer</li>
+                                </a>
+                                <a href="">
+                                    <li class="text-[0.9rem] md:text-[1rem] capitalize text-white list-none text-left hov">Whats is JavaScripts</li>
+                                </a>
+                                <a href="">
+                                    <li class="text-[0.9rem] md:text-[1rem] capitalize text-white list-none text-left hov">Difference between React and React-Native</li>
+                                </a>
+                            </ul>
+                        </div>
+                          <!-- Hero section Starts here -->
+                          <div style=" background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6)), url('./src/image/blog.jpg');background-repeat: no-repeat; background-size: cover; object-fit: contain; background-position: center;" class=" w-full  md:w-[60%] hidden md:block"  >
+                           
+                        </div>
+
+                    </div>                        
+                        <h1 class="darkBlue text-[2rem] bold text-center mt-8">OUR STORIES</h1>
+                        <div  class="p-4 grid grid-cols-1  md:grid-cols-2 lg:grid-cols-3 mx-auto gap-4">
+                           <a href="#" ><div class="hove"  style="border-radius: 6px; box-shadow: rgba(98, 97, 97, 0.5) 0px 5px 15px;">
+                                <div  class="w-full h-[30vh] overflow-hidden img-cont">
+                                    <img src="./src/image/mam.png" alt="" width="100%"/> 
+                                </div>
+                                    <div class="text-ellipsis hovee mt-4 p-4">
+                                        <h3 class="darkBlue capitalize bold text-[1.3rem]">What is Coding?</h3>                              
+                                    <p>Coding is the process of giving a computer an instruction or a set of instructions to carry out a particuar task</p>
+                                    </div>
+                            </div> </a>
+                        
+                        
+                            <a href="#" ><div class="hove"  style="border-radius: 6px; box-shadow: rgba(98, 97, 97, 0.5) 0px 5px 15px;">
+                                <div  class="w-full h-[30vh] overflow-hidden img-cont">
+                                    <img src="./src/image/mam.png" alt="" width="100%"/> 
+                                </div>
+                                    <div class="text-ellipsis hovee mt-4 p-4">
+                                        <h3 class="darkBlue capitalize bold text-[1.3rem]">What is Coding?</h3>                              
+                                    <p>Coding is the process of giving a computer an instruction or a set of instructions to carry out a particuar task</p>
+                                    </div>
+                            </div> </a>
+                            
+                            <a href="#" ><div class="hove"  style="border-radius: 6px; box-shadow: rgba(98, 97, 97, 0.5) 0px 5px 15px;">
+                                <div  class="w-full h-[30vh] overflow-hidden img-cont">
+                                    <img src="./src/image/mam.png" alt="" width="100%"/> 
+                                </div>
+                                    <div class="text-ellipsis hovee mt-4 p-4">
+                                        <h3 class="darkBlue capitalize bold text-[1.3rem]">What is Coding?</h3>                              
+                                    <p>Coding is the process of giving a computer an instruction or a set of instructions to carry out a particuar task</p>
+                                    </div>
+                            </div> </a>             
+                
+                        </div>
+
+                          <!-- Whaatsapp Gif -->
+            <img src="./src/image/wat.gif" alt="whatsapp" class="whatsapp cursor-pointer" id="wat" />
+			<div class="chatbox-cont hidden">
+				<div class="chatbox-head">
+					<div class="logo">
+						<img
+							src="./src/image/whatsapp-logo-png-2273.png"
+							alt="whatsapp-logo"
+						/>
+					</div>
+					<div class="cancel-icon cursor-pointer">
+						<i class="fa-solid fa-circle-xmark"></i>
+					</div>
+				</div>
+				<div class="chatbox-body">
+					<div class="message-box">
+						<p>
+							Hello, Welcome To  Devnaija Academy, I am Yetunde. How may i
+							help you today?
+						</p>
+					</div>
+					<a href="https://wa.me/message/ZOED4Q5QXYBDC1" target="_blank">
+                        <div class="openchat-box">
+                            <p>Open Chat</p>
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </div>
+                    </a>
+				</div>
+			</div>
+
+       </main>
+
+       <!-- End Main -->
+
+         <!-- Footer  -->
+
+         <div class="">                
+            <!-- second footer -->
+            <div class="bgDark grid grid-cols-1  space-y-8 md:space-x-8 md:space-y-0 md:flex justify-between lg:p-12 p-4">
+               <div>
+                <div>
+                    <h1 class="text-white font font-bold text-[1.5rem]">Contacts</h1>
+                    <hr class="bg-orange h-[7px] w-[4rem]" />
+                   </div>
+                <div class="flex flex-col space-y-4 ">
+               
+                <div class="flex items-center space-x-2 mt-4">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 text-white">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z" />
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z" />
+                      </svg>
+                      
+                      <p class="text-white ">13, Joseph Street,(Off Opebi Link Bridge) <br/> Near Adebola House, Opebi, Ikeja Lagos</p>
+                 </div>
+                <div class="flex items-center space-x-2 ">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 text-white">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M20.25 3.75v4.5m0-4.5h-4.5m4.5 0l-6 6m3 12c-8.284 0-15-6.716-15-15V4.5A2.25 2.25 0 014.5 2.25h1.372c.516 0 .966.351 1.091.852l1.106 4.423c.11.44-.054.902-.417 1.173l-1.293.97a1.062 1.062 0 00-.38 1.21 12.035 12.035 0 007.143 7.143c.441.162.928-.004 1.21-.38l.97-1.293a1.125 1.125 0 011.173-.417l4.423 1.106c.5.125.852.575.852 1.091V19.5a2.25 2.25 0 01-2.25 2.25h-2.25z" />
+                      </svg>
+                      
+                      <a href="tel:09152690938" class=""><p class="text-white fhov border-none  ">09152690938</p></a>
+                 </div>
+                <div class="flex items-center space-x-2 ">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 text-white">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75" />
+                      </svg>
+                      
+                      <a href="mailto:support@devnaija.com" class="hov" ><p class="text-white fhov ">support@devnaija.com</p></a>
+                 </div>
+              </div>
+               </div>
+
+                <div>
+                   <div>
+                    <h1 class="text-white font font-bold text-[1.5rem]">Quick Links</h1>
+                    <hr class="bg-orange h-[7px] w-[4rem]" />
+                   </div>
+
+                   <ul class="mt-4">
+                    <a href="./index.html"><li class="text-white fhov">Home</li></a id="home">
+                    <a href="./About.html"><li class="text-white fhov">About Us</li></a>
+                    
+                    <a href="./devnaija_blog.html"><li class="text-white fhov">Blog</li></a>
+                    <a href="./Contact.html"><li class="text-white fhov">Contact</li></a>
+                   </ul>
+                </div>
+
+                <div>
+                    <div>
+                     <h1 class="text-white font font-bold text-[1.5rem]">Social Links</h1>
+                     <hr class="bg-orange h-[7px] w-[4rem]" />
+                    </div>
+
+                    <ul class="mt-4">
+                        <a target="_blank " href="https://wa.me/message/ZOED4Q5QXYBDC1"><div class="flex space-x-2 items-center hov"><i class="fa-brands fa-whatsapp text-white"></i><li class="text-white fhov">Whatsapp</li></div></a>
+                        <a target="_blank " href="https://web.facebook.com/Devnaija-Academy-105338672274343"><div class="flex space-x-2 items-center hov"><i class="fa-brands fa-facebook text-white"></i><li class="text-white fhov">facebook</li></div></a>
+                        <a target="_blank " href="https://twitter.com/DevnaijaAcademy"><div class="flex space-x-2 items-center hov"><i class="fa-brands fa-twitter text-white"></i><li class="text-white fhov">twitter</li></div></a>
+                        <a target="_blank " href="http://www.linkedin.com/in/devnaija-academy-70300824b"><div class="flex space-x-2 items-center hov"><i class="fa-brands fa-linkedin text-white"></i><li class="text-white fhov">linkedin</li></div></a>  
+                        <a target="_blank " href="https://www.youtube.com/channel/UCUuyhAicO1OjEtosIkuWSvw"><div class="flex space-x-2 items-center hov"><i class="fa-brands fa-youtube text-white"></i><li class="text-white fhov">youtube</li></div></a>                     
+                    </ul>
+                 </div>
+                 
+                 
+                </div>
+            </div>
+
+        <!-- End footer -->
+
+        <script src="./index.js"></script>
+</body>
+</html>

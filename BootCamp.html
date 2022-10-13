@@ -1,0 +1,761 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>
+			BootCamp |  Coding and Financial Literacy School for Kids on Summer Holidays
+		</title>
+        <meta name="description" content=" Coding and Financial Literacy School for Kids on Summer Holiday" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap"
+			rel="stylesheet"
+		/>
+		<script
+			src="https://kit.fontawesome.com/386ad145b9.js"
+			crossorigin="anonymous"
+		></script>
+        <link rel="shortcut icon" href="./src/image/logo.png" type="image/x-icon">
+		<link href="/dist/output.css" rel="stylesheet" />
+	</head>
+	<body>
+		<!-- header -->
+		<div
+			class="bg-white darkBlue block z-40 w-full fixed shadow-sm shadow-gray-300"
+			id="head"
+		>
+			<div
+				class="flex justify-between w-full items-center p-[.5rem] px-[2rem] mx-auto"
+			>
+				<img src="./src/image/logo.png" alt="logo" height="70px" width="70px" />
+
+				<div class="menu block md:hidden">
+					<svg
+						xmlns="http://www.w3.org/2000/svg"
+						fill="none"
+						viewBox="0 0 24 24"
+						stroke-width="1.5"
+						stroke="currentColor"
+						class="w-8 h-8 orange cursor-pointer"
+					>
+						<path
+							stroke-linecap="round"
+							stroke-linejoin="round"
+							d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+						/>
+					</svg>
+				</div>
+
+				<div class="hidden" id="cancel">
+					<svg
+						xmlns="http://www.w3.org/2000/svg"
+						fill="none"
+						viewBox="0 0 24 24"
+						stroke-width="1.5"
+						stroke="currentColor"
+						class="w-8 h-8 orange cursor-pointer"
+					>
+						<path
+							stroke-linecap="round"
+							stroke-linejoin="round"
+							d="M6 18L18 6M6 6l12 12"
+						/>
+					</svg>
+				</div>
+
+				<div class="md:w-[30rem] lg:w-[40rem] hidden md:block darkBlue mt-4">
+					<ol class="flex justify-between">
+						<a href="./index.html" class="overflow-hidden w-[3rem]">
+							<li class="cursor-pointer uppercase linhov">Home</li>
+							<div class="h-[2px] line w-[5rem] bg-orange"></div>
+						</a>
+						<div class="relative group cursor-pointer h-[3rem]">
+							<div class="flex space-x-2 items-center justify-between">
+								<p>PROGRAM</p>
+								<i class="fa-solid fa-chevron-down"></i>
+							</div>
+							<div
+								class="absolute top-8 left-[-2rem] bgDark text-white rounded-lg w-[20rem] p-4 hidden group-hover:flex flex-col gap-4 cursor-pointer"
+							>
+								 <a id="boot" href="./BootCamp.html" class="a">Summer Coding Bootcamp(Kids)</a>
+								<a href="./Adult.html" class="a">Adult Programs</a>
+							</div>
+						</div>
+                        <a href="./devnaija_blog.html" class="overflow-hidden w-[4rem]">
+                            <li class="cursor-pointer uppercase linhov">BLOG</li>
+                            <div class="h-[2px] line w-[5rem] bg-orange"></div>
+                        </a>
+						<a href="./About.html" class="overflow-hidden w-[4rem]">
+							<li class="cursor-pointer uppercase linhov">About</li>
+							<div class="h-[2px] line w-[5rem] bg-orange"></div>
+						</a>
+
+						<a href="./Contact.html" class="overflow-hidden w-[5rem]">
+							<li class="cursor-pointer uppercase linhov">Contact</li>
+							<div class="h-[2px] linn w-[5rem] bg-orange"></div>
+						</a>
+					</ol>
+				</div>
+			</div>
+
+			<div
+				class="flex-col gap-4 p-4 hidden bgDark text-white"
+				id="nav"
+				style="list-style: none"
+			>
+				<a href="./index.html ">
+					<li class="cursor-pointer a uppercase">Home</li>
+				</a>
+
+				<div class="relative">
+					<input type="checkbox" id="check" class="hidden" />
+					<div class="flex space-x-2 items-center justify-between hov" id="sm">
+						<p class="cursor-pointer a uppercase">PROGRAM</p>
+						<i class="fa-solid fa-chevron-down mr-[2rem]"></i>
+					</div>
+					<div
+						class="hidden bgDark text-white rounded-lg w-[20rem] p-4 flex-col gap-4 cursor-pointer"
+						id="sh"
+					>
+						 <a id="boot" href="./BootCamp.html" class="a">Summer Coding Bootcamp(Kids)</a>
+						<a href="./Adult.html" class="a">Adult Programs</a>
+					</div>
+				</div>
+                <a href="./devnaija_blog.html">
+                    <li class="cursor-pointer a uppercase">Blog</li>    
+                    </a>
+				<a href="./About.html ">
+					<li class="cursor-pointer a uppercase">About us</li>
+				</a>
+
+				<a href="./Contact.html ">
+					<li class="cursor-pointer a uppercase">Contact</li>
+				</a>
+			</div>
+		</div>
+
+		<!-- End Header -->
+
+		<main class="flex flex-col space-y-6">
+            <div
+			class="h-screen w-full flex items-center justify-center"
+			style="
+				background: linear-gradient(
+						to bottom,
+						rgba(0, 0, 0, 0.561),
+						rgba(0, 0, 0, 0.524)
+					),
+					url('./src/image/jem.jpeg');
+                background-attachment: fixed;
+				background-repeat: no-repeat;
+				background-size: cover;
+				object-fit: center;
+				background-position: center;
+			"
+		>
+			<div class="text-center flex flex-col gap-4">
+				<h1 class="text-center text-white w-full text-[1.5rem] md:text-[2rem]">
+					DEVNAIJA ACADEMY<br />
+					CODING AND FINANCIAL LITERACY SCHOOL
+				</h1>
+				<p class="text-white">
+					Physical (In-person) and Virtual (Online) Coding Classes for Kids and
+					Adults aged 6-16 and 17+ respectively.
+				</p>
+
+				<a href="/Register.html"
+					><div
+						class="text-center py-4 px-8 bg-orange rounded-lg cursor-pointer text-white w-[80%] md:w-[30%] mx-auto hover:scale-105 active:scale-95"
+					>
+						Get Started For Free
+					</div></a
+				>
+			</div>
+		</div>
+		<!-- end homepage -->
+
+		<!-- Message from managers Desk -->
+		<div class="lg:w-[90%] mx-auto w-full p-2">
+			<h1 class="mb-4 red text-[2rem] darkBlue text-center uppercase font-bold">
+				Message from manager's desk
+			</h1>
+
+			<div class="grid grid-cols-1 md:grid-cols-2">
+				<p class="text-black text-lg leading-[2rem] mb-4">
+					Hi, thanks for visiting our site, we are please to have you here.
+					<br />
+					I am Engr Mrs Ogunbiyi, i am the manager of Devnaija Academy. <br />
+					Our vision is to raise one million people benefiting from the school
+					by 2050 by providing education and training that is affordable to all.
+					<br />
+					Our mission is to create world-class school with a difference by
+					focusing on coding and financial literacy.
+				</p>
+                <iframe
+				class='w-full  rounded-lg md:h-full h-[300px]'
+				title='video of a woman talking about coding'                
+				src='https://www.youtube.com/embed/PUPpt2_Y-Oc'
+			></iframe>
+				
+			</div>
+		</div>
+
+		<!-- End message from mangers desk -->
+
+		<!-- First Write up -->
+
+		<div class="w-full lg:w-[90%] mx-auto p-2">
+			<div class="flex flex-col lg:flex-row gap-2 mx-auto">
+				<div class="lg:w-[50%] w-full text-lg">
+					<div class="darkBlue font-bold text-2xl mb-2">
+						Do your children always grab your phone to play games?
+					</div>
+					<div class="darkBlue font-bold text-2xl mb-2">
+						Always restless running around?
+					</div>
+					<div class="darkBlue font-bold text-2xl mb-2">
+						Spends every money that comes into their hands?
+					</div>
+
+					<p>
+						It is not their fault, let’s help you , channel their energy, show
+						them a better path of sitting to create those games themselves and
+						spend their money wisely. These skills will help them compete
+						globally for jobs, become technopreneurs(like Steve Jobs),earn in
+						local and foreign currencies and become nation builders by solving
+						real problems.
+					</p>
+				</div>
+				<div
+					class="w-full lg:w-[50%] text-lg overflow-hidden rounded-lg"
+                    style="background-image: url('./src/image/drag.jpeg'); background-position: center; background-size: cover; object-fit: cover; "
+				>					
+				</div>
+			</div>
+		</div>
+		<!-- End first Write Up -->
+
+        <!-- Second Write Up -->
+
+        <div class='flex  lg:space-x-6 lg:w-[90%] space-y-4 p-2 mx-auto my-4 w-full flex-col lg:flex-row'>
+			<div class='lg:w-[50%] w-full '>
+				<h1 class='darkBlue text-3xl font-bold text-center uppercase mb-4'>
+					Why Coding and Financial Literacy for kids ?
+				</h1>
+				<p class='line-height text-lg mb-2'>
+					Coding, or programming, is simply the learning of computer language.
+					In order to control computers (robots or drones)
+				</p>
+				<ul class="ml-4">
+					<div class="flex space-x-2 items-center">
+                        <i class="fa-solid fa-circle-check text-black h-4 w-4"></i>
+                        <li class='text-lg'>
+                            It improves their performance in academics
+                        </li>
+                    </div>
+					<div class="flex space-x-2 items-center">
+                        <i class="fa-solid fa-circle-check text-black h-4 w-4"></i>
+                        <li class='text-lg'>
+                            It improves their thinking & creative capacity
+                        </li>
+                    </div>
+					<div class="flex space-x-2 items-center">
+                        <i class="fa-solid fa-circle-check text-black h-4 w-4"></i>
+                        <li class='text-lg'>
+                            It helps the children cultivate the habit of saving & investing
+                            early in life
+                        </li>
+                    </div>
+					<div class="flex space-x-2 items-center">
+                        <i class="fa-solid fa-circle-check text-black h-4 w-4"></i>
+                        <li class='text-lg'>
+                            It helps them create businesses and be their own boss
+                        </li>
+                    </div>
+					<div class="flex space-x-2 items-center">
+                        <i class="fa-solid fa-circle-check text-black h-4 w-4"></i>
+                        <li class='text-lg'>It engages them positively </li>
+                    </div>
+				</ul>
+			</div>
+			<iframe
+				class='w-full lg:w-[50%] rounded-lg h-[300px] md:h-fit'
+				title='videos of kids in class coding and playing with robots '
+				src='https://www.youtube.com/embed/TeO8ebBwJWY'
+			></iframe>
+		</div>
+
+        <!-- End second Write Up -->
+
+        <!-- Third Write Up -->
+
+        <div class='w-full'>
+			<div class=' w-full  justify-center lg:w-[90%] p-2 mx-auto grid grid-cols-1 lg:grid-cols-2 gap-6 md:gap-2 '>
+				<div class=' w-full lg:w-full text-lg'>
+					<h1 class='text-3xl darkBlue font-bold text-center uppercase mb-4'>
+						How our weekend classes runs
+					</h1>
+					<p>
+						We offer both
+						<span class='text-black font-bold '>
+							Physical and Virtual(Online) classes <br /> For physical classes,
+							laptops are available at the center for learning
+						</span>
+						<br /> 
+						Our weekend classes runs for two hours every saturday in two
+						batches. <br /> See available batches below: <br />
+						<span class='font-bold text-black'>
+							Morning: 10am - 12pm
+						</span>
+						<br />
+						<span class='font-bold text-black'> Afternoon: 1pm - 3pm </span>
+					</p>
+				</div>
+
+				<div class=' w-full  text-lg'>
+					<h1 class='darkBlue text-3xl font-bold text-center uppercase mb-4'>
+						Courses For Kids
+					</h1>
+					<p>
+						<h2 class='mt-4 text-left md:text-center text-black font-bold'>
+							HTML,CSS & Javascript(Website)
+						</h2>
+						<h2 class='text-black md:text-center font-bold'>
+						Financial Literacy
+						</h2>
+						<h2 class='text-black md:text-center font-bold'>Scratch(Games)</h2>
+						<h2 class='text-black md:text-center font-bold'>Robotics</h2>
+					</p>
+				</div>
+			</div>
+        </div>
+			<a
+				href='https://wa.me/message/ZOED4Q5QXYBDC1'				
+			>
+				<button class='bg-orange py-2 w-[90%] ml-[5%] mr-[5%] md:w-[30%]  md:ml-[35%] md:mr-[35%] px-6  text-white rounded-full hover:scale-105 active:scale-95 mt-4 text-2xl '>
+					Chat us via Whatsap
+				</button>
+			</a>
+
+        <!-- End Third Write Up -->
+
+        <!-- Why -->
+
+        <div class="md:w-[90%] mx-auto w-full p-2">
+			<h1 class='darkBlue text-3xl font-bold text-center uppercase mb-4 lg:mb-6'>Why DevNaija Academy ? </h1>
+			<div class="flex lg:space-x-6  lg:flex-row flex-col justify-center   space-y-3 lg:space-y-0">
+				<div class=" space-y-3 w-full">
+                    <div class='flex space-x-2 items-center'>          
+                        <i class="fa-solid fa-circle-check darkBlue h-4 w-4"></i>
+                        <p class='text-gray-600'>Lessons are hands-on and project-based</p>
+                    </div>	
+                    <div class='flex space-x-2 items-center'>                        
+                        <i class="fa-solid fa-circle-check darkBlue h-4 w-4"></i>
+                        <p class='text-gray-600'>Our teachers are very friendly and are experienced working with children</p>
+                    </div>				
+                    <div class='flex space-x-2 items-center'>                        
+                        <i class="fa-solid fa-circle-check darkBlue h-4 w-4"></i>
+                        <p class='text-gray-600'>Children are exposed to the technology world</p>
+                    </div>					
+				</div>
+				<div class="space-y-3 w-full ">
+                    <div class='flex space-x-2 items-center'>                        
+                        <i class="fa-solid fa-circle-check darkBlue h-4 w-4"></i>
+                        <p class='text-gray-600'>We help the children channel their energy into coding which can create a better future for them</p>
+                    </div>
+                    <div class='flex space-x-2 items-center'>                        
+                        <i class="fa-solid fa-circle-check darkBlue h-4 w-4"></i>
+                        <p class='text-gray-600'>We teach financial literacy and entrepreneurial skills</p>
+                    </div>	
+                    <div class='flex space-x-2 items-center'>                        
+                        <i class="fa-solid fa-circle-check darkBlue h-4 w-4"></i>
+                        <p class='text-gray-600'>A Convenient and friendly enviroment for learning</p>
+                    </div>									
+				</div>
+			</div>
+		</div>
+
+        <!-- End Why -->
+
+        <!-- Testimonies -->
+
+        <div class='w-[80%] mx-auto'>
+			<h1 class='capitalize darkBlue text-3xl font-bold text-center mb-12'>
+				TESTIMONIALS
+			</h1>
+
+			<div class=' grid grid-cols-1 lg:grid-cols-2 gap-x-8 gap-y-8 '>
+				<iframe
+					title='Videos of a boy testifying about what he has learnt in Devnaija Academy'
+					src='https://www.youtube.com/embed/TmBT0V2JMh4'
+					class=' w-full rounded-lg mx-auto mb-4 h-[400px] '
+				></iframe>
+
+				<iframe
+					title='Videos of a mother Appreciating Devnaija Academy for the knowledge impacted in her daugther'
+					src='https://www.youtube.com/embed/nEfNXtN_WfA'
+					class=' w-full mx-auto mb-4 h-[400px] rounded-lg '
+				></iframe>
+
+                <div class='lg:w-full w-full border border-black rounded-lg py-6 px-6 space-y-6'>
+                    <p>
+                        I registered my son for the devnaija academy summer training and in just the second week of the program instead of playing games with his phone, he now spends his time trying to build games. This academy has allowed him to channel all his energy into something beneficial to him, i am so happy with my decision to enroll him to devnaija academy, it was truly a revelation.
+                    </p>
+                    <div class='flex space-x-2'>
+                        <div class='rounded-full bg-gray-400 h-16 w-16 overflow-hidden'><img src="./src/image/Ester.jpeg" class="" /></div>
+                        <div>
+                            <h2 class='text-black text-lg font-bold darkBlue'>Mrs Esther</h2>
+                            <p class='text-gray-400'>Mother</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class='lg:w-full w-full border border-black rounded-lg py-6 px-6 space-y-6'>
+                    <p>
+                        Thank you at Devnaija for transforming my son, he is passionate about building games and assembling robots. He has started saving and spending his money wisely
+                    </p>
+                    <div class='flex space-x-2'>
+                        <div class='rounded-full bg-gray-400 h-16 w-16 overflow-hidden'><img src="" class="" /></div>
+                        <div>
+                            <h2 class='text-black text-lg font-bold darkBlue'>Mrs Ibukun K.</h2>
+                            <p class='text-gray-400'>Mother</p>
+                        </div>
+                    </div>
+                </div>
+								
+			</div>
+		</div>
+
+        <!-- End Testimonies -->
+
+        <!-- Team  -->
+
+        <div class='lg:w-[90%] mx-auto w-full p-2'>
+			<h1 class='uppercase darkBlue text-3xl text-center font-bold mb-4'>
+				Meet our team
+			</h1>
+			<div class='grid  w-full grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-8'>
+
+                <div class='flex space-x-4 align-text-bottom w-full flex-col justify-center  items-center'>
+                    <img src="./src/image/bimbo.jpeg" class="w-[150px] h-[150px] rounded-full" />
+                    <div class='text-center'>
+                        <h2 class='text-black text-lg font-bold darkBlue'>Bimbo Omotoso</h2>
+                        <p class='text-gray-400'>Senior Software Developer/Advisor</p>                        
+                    </div>
+                </div>
+
+				<div class='flex space-x-4 align-text-bottom w-full flex-col justify-center  items-center'>
+                    <img src="./src/image/Abiodun.jpeg" class="w-[150px] h-[150px] rounded-full" />
+                    <div class='text-center'>
+                        <h2 class='text-black text-lg font-bold darkBlue'>Abiodun Obisesan</h2>
+                        <p class='text-gray-400'>Senior software developer /Advisor</p>                        
+                    </div>
+                </div>
+
+				<div class='flex space-x-4 align-text-bottom w-full flex-col justify-center  items-center'>
+                    <img src="./src/image/Dolapo.jpg" class="w-[150px] h-[150px] rounded-full" />
+                    <div class='text-center'>
+                        <h2 class='text-black text-lg font-bold darkBlue'>Dolapo Ogunbiyi</h2>
+                        <p class='text-gray-400'>Manager</p>                        
+                    </div>
+                </div>		
+
+                <div class='flex space-x-4 align-text-bottom w-full flex-col justify-center  items-center'>
+                    <img src="./src/image/Dele.jpeg" class="w-[150px] h-[150px] rounded-full" />
+                    <div class='text-center'>
+                        <h2 class='text-black text-lg font-bold darkBlue'>Bamidele Adedeji</h2>
+                        <p class='text-gray-400'>Software Developer/Instructor</p>                        
+                    </div>
+                </div>			
+
+                <div class='flex space-x-4 align-text-bottom w-full flex-col justify-center  items-center'>
+                    <img src="./src/image/Yet.jpeg" class="w-[150px] h-[150px] rounded-full" />
+                    <div class='text-center'>
+                        <h2 class='text-black text-lg font-bold darkBlue'>Jadesola Yetunde</h2>
+                        <p class='text-gray-400'>Front-End Developer/Instructor</p>                        
+                    </div>
+                </div>
+
+				 <div class='flex space-x-4 align-text-bottom w-full flex-col justify-center  items-center'>
+                    <img src="./src/image/eg.jfif" class="w-[150px] h-[150px] rounded-full" />
+                    <div class='text-center'>
+                        <h2 class='text-black text-lg font-bold darkBlue'>Ezomon Glory</h2>
+                        <p class='text-gray-400'>Front-End Developer/Instructor</p>                        
+                    </div>
+                </div>
+				
+			</div>
+		</div>
+
+        <!-- End Team -->
+
+        <!-- FAQ -->    
+
+        <div class='lg:w-[60%] mx-auto w-full p-2'>
+            <h1 class='darkBlue font-bold text-3xl text-center mb-4'>Frequently Asked Questions</h1>        
+            <div class='space-y-3'>
+                <div>
+                    <div class=' flex cursor-pointer group justify-between p-4 bgDark  text-white' id="first">
+                        <input type="checkbox" id="firstCheck" class="hidden" />
+                        <h2>WHAT IS CODING OR PROGRAMMING? </h2>
+                        <div class="">                        
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </div>
+                    </div>
+    
+                    <div class="text-white bgDark p-4 hidden" id="firstChild">                        
+                        Coding, or programming, is simply the learning of computer language. In order to control computers (robots or drones), we need to give instructions to the computer in a language that they understand – that language is called programming language, and the act of using that language is called coding. We live in a fast changing digital world, and to understand how to code is to understand how this digital world works. Just as we learn science to understand how our nature works, our children must learn coding to understand how technology works and how to use it to their advantage.
+                    </div>
+                </div>  
+                
+                <div>
+                    <div class=' flex cursor-pointer group justify-between p-4 bgDark  text-white' id="second">
+                        <input type="checkbox" id="secondCheck" class="hidden" />
+                        <h2>HOW WILL LEARNING TO CODE HELP MY CHILD’S EDUCATION </h2>
+                        <div class="">                        
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </div>
+                    </div>
+    
+                    <div class="text-white bgDark p-4 hidden" id="secondChild">                        
+                        Learning to code helps to develop many important skills that can help a child succeed in school and life beyond. we live in a world where it is unavoidable to use technology. We are offering the you the chance to let your children benefit from these technology , it also increases their thinking level which makes them a lot smarter than they already are. In addition to that, we encourage interaction in our classes, thus helping a child develop his confidence and social skills.
+                    </div>
+                </div>
+
+                <div>
+                    <div class=' flex cursor-pointer group justify-between p-4 bgDark  text-white' id="third">
+                        <input type="checkbox" id="thirdCheck" class="hidden" />
+                        <h2>WHAT CAN MY CHILD DO AFTER LEARNING TO CODE? </h2>
+                        <div class="">                        
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </div>
+                    </div>
+    
+                    <div class="text-white bgDark p-4 hidden" id="thirdChild">                        
+                        Our innovative curriculum guarantees that most of our students will be able to develop a simple software after going through our program. What kind of software depends on your child’s interest and passions. He/she could build games, animations, mobile apps, and any kind of software.
+                    </div>
+                </div>
+
+                <div>
+                    <div class=' flex cursor-pointer group justify-between p-4 bgDark  text-white' id="fourth">
+                        <input type="checkbox" id="fourthCheck" class="hidden" />
+                        <h2>WHAT KIND OF JOB CAN OUR CHILDREN DO WITH PROGRAMMING? </h2>
+                        <div class="">                        
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </div>
+                    </div>
+    
+                    <div class="text-white bgDark p-4 hidden" id="fourthChild">                        
+                        Manufacturing, Banking, Medical, Transportation, Telecomunication, IT… in fact any industry that uses technology (which is almost all) will benefits from the knowledge of Coding. You do not need to be a computer scientist or programmer to learn coding, just as you do not need to be a scientist to learn science. All we are saying in essence is that they will have a guaranteed future to choose from when they are ready
+                    </div>
+                </div>
+
+                <div>
+                    <div class=' flex cursor-pointer group justify-between p-4 bgDark  text-white' id="fifth">
+                        <input type="checkbox" id="fifthCheck" class="hidden" />
+                        <h2>WHY IS CODING IMPORTANT FOR YOUR CHILD? </h2>
+                        <div class="">                        
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </div>
+                    </div>
+    
+                    <div class="text-white bgDark p-4 hidden" id="fifthChild">                        
+                        Because technology and software controls everything we do in this digital age, demand for those who will create this technology has skyrocketed and this has made coding the number one in-demand skill for everyone in the 21st century. Coding teaches creativity, logical reasoning, critical thinking and most importantly helps us to solve problems by creating software that makes life easier for people.
+                    </div>
+                </div>
+            </div>             
+        </div>
+        
+
+        <!-- END FAQ -->
+
+          <!-- Whaatsapp Gif -->
+          <img src="./src/image/wat.gif" alt="whatsapp" class="whatsapp cursor-pointer" id="wat" />
+          <div class="chatbox-cont hidden">
+              <div class="chatbox-head">
+                  <div class="logo">
+                      <img
+                          src="./src/image/whatsapp-logo-png-2273.png"
+                          alt="whatsapp-logo"
+                      />
+                  </div>
+                  <div class="cancel-icon cursor-pointer">
+                      <i class="fa-solid fa-circle-xmark"></i>
+                  </div>
+              </div>
+              <div class="chatbox-body">
+                  <div class="message-box">
+                      <p>
+                          Hello, Welcome To  Devnaija Academy, I am Yetunde. How may i
+                          help you today?
+                      </p>
+                  </div>
+                  <a href="https://wa.me/message/ZOED4Q5QXYBDC1" target="_blank">
+                      <div class="openchat-box">
+                          <p>Open Chat</p>
+                          <i class="fa-solid fa-arrow-right"></i>
+                      </div>
+                  </a>
+              </div>
+          </div>
+
+
+        </main>
+
+
+		<!-- Footer  -->
+
+		<div class="">
+			<!-- second footer -->
+			<div
+				class="bgDark grid grid-cols-1 space-y-8 md:space-x-8 md:space-y-0 md:flex justify-between lg:p-12 p-4"
+			>
+				<div>
+					<div>
+						<h1 class="text-white font font-bold text-[1.5rem]">Contacts</h1>
+						<hr class="bg-orange h-[7px] w-[4rem]" />
+					</div>
+					<div class="flex flex-col space-y-4">
+						<div class="flex items-center space-x-2 mt-4">
+							<svg
+								xmlns="http://www.w3.org/2000/svg"
+								fill="none"
+								viewBox="0 0 24 24"
+								stroke-width="1.5"
+								stroke="currentColor"
+								class="w-6 h-6 text-white"
+							>
+								<path
+									stroke-linecap="round"
+									stroke-linejoin="round"
+									d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z"
+								/>
+								<path
+									stroke-linecap="round"
+									stroke-linejoin="round"
+									d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z"
+								/>
+							</svg>
+
+							<p class="text-white">
+								13, Joseph Street,(Off Opebi Link Bridge) <br />
+								Near Adebola House, Opebi, Ikeja Lagos
+							</p>
+						</div>
+						<div class="flex items-center space-x-2">
+							<svg
+								xmlns="http://www.w3.org/2000/svg"
+								fill="none"
+								viewBox="0 0 24 24"
+								stroke-width="1.5"
+								stroke="currentColor"
+								class="w-6 h-6 text-white"
+							>
+								<path
+									stroke-linecap="round"
+									stroke-linejoin="round"
+									d="M20.25 3.75v4.5m0-4.5h-4.5m4.5 0l-6 6m3 12c-8.284 0-15-6.716-15-15V4.5A2.25 2.25 0 014.5 2.25h1.372c.516 0 .966.351 1.091.852l1.106 4.423c.11.44-.054.902-.417 1.173l-1.293.97a1.062 1.062 0 00-.38 1.21 12.035 12.035 0 007.143 7.143c.441.162.928-.004 1.21-.38l.97-1.293a1.125 1.125 0 011.173-.417l4.423 1.106c.5.125.852.575.852 1.091V19.5a2.25 2.25 0 01-2.25 2.25h-2.25z"
+								/>
+							</svg>
+
+							<a href="tel:09152690938" class=""
+								><p class="text-white fhov border-none">09152690938</p></a
+							>
+						</div>
+						<div class="flex items-center space-x-2">
+							<svg
+								xmlns="http://www.w3.org/2000/svg"
+								fill="none"
+								viewBox="0 0 24 24"
+								stroke-width="1.5"
+								stroke="currentColor"
+								class="w-6 h-6 text-white"
+							>
+								<path
+									stroke-linecap="round"
+									stroke-linejoin="round"
+									d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75"
+								/>
+							</svg>
+
+							<a href="mailto:support@devnaija.com" class="hov"
+								><p class="text-white fhov">support@devnaija.com</p></a
+							>
+						</div>
+					</div>
+				</div>
+
+				<div>
+					<div>
+						<h1 class="text-white font font-bold text-[1.5rem]">Quick Links</h1>
+						<hr class="bg-orange h-[7px] w-[4rem]" />
+					</div>
+
+					<ul class="mt-4">
+						<a href="./index.html"><li class="text-white fhov">Home</li></a>
+						<a href="./About.html"><li class="text-white fhov">About Us</li></a>						
+						<a href="./devnaija_blog.html"><li class="text-white fhov">Blog</li></a>
+						<a href="./Contact.html"
+							><li class="text-white fhov">Contact</li></a
+						>
+					</ul>
+				</div>
+
+				<div>
+					<div>
+						<h1 class="text-white font font-bold text-[1.5rem]">
+							Social Links
+						</h1>
+						<hr class="bg-orange h-[7px] w-[4rem]" />
+					</div>
+
+					<ul class="mt-4">
+						<a target="_blank " href="https://wa.me/message/ZOED4Q5QXYBDC1"
+							><div class="flex space-x-2 items-center hov">
+								<i class="fa-brands fa-whatsapp text-white"></i>
+								<li class="text-white fhov">Whatsapp</li>
+							</div></a
+						>
+						<a
+							target="_blank "
+							href="https://web.facebook.com/Devnaija-Academy-105338672274343"
+							><div class="flex space-x-2 items-center hov">
+								<i class="fa-brands fa-facebook text-white"></i>
+								<li class="text-white fhov">facebook</li>
+							</div></a
+						>
+						<a target="_blank " href="https://twitter.com/DevnaijaAcademy"
+							><div class="flex space-x-2 items-center hov">
+								<i class="fa-brands fa-twitter text-white"></i>
+								<li class="text-white fhov">twitter</li>
+							</div></a
+						>
+						<a
+							target="_blank "
+							href="http://www.linkedin.com/in/devnaija-academy-70300824b"
+							><div class="flex space-x-2 items-center hov">
+								<i class="fa-brands fa-linkedin text-white"></i>
+								<li class="text-white fhov">linkedin</li>
+							</div></a
+						>
+						<a
+							target="_blank "
+							href="https://www.youtube.com/channel/UCUuyhAicO1OjEtosIkuWSvw"
+							><div class="flex space-x-2 items-center hov">
+								<i class="fa-brands fa-youtube text-white"></i>
+								<li class="text-white fhov">youtube</li>
+							</div></a
+						>
+					</ul>
+				</div>
+			</div>
+		</div>
+
+		<!-- End footer -->
+
+		<script src="./boot.js"></script>
+	</body>
+</html>

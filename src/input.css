@@ -1,0 +1,288 @@
+/* @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap"); */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+    --Red: hsl(4, 100%, 49%);
+    --White: hsl(0, 0%, 100%);
+    --Blue: hsl(223, 55%, 22%);
+    --Yellow: hsl(20, 100%, 50%);
+    --Green: #25d366;
+  }
+
+body {
+	font-family: "Poppins", sans-serif;    
+}
+
+.orange {
+	color: #ff5400;
+}
+
+.hov:hover {
+	color: #ff5400;
+}
+
+.fhov {
+	padding-bottom: 2px;
+	border: transparent;
+	/* border-bottom: gray 1px dotted; */
+	transition: all 0.5s ease-in;
+}
+
+.fhov:hover {
+	/* border-bottom: #ff5400 1px dotted; */
+	color: #ff5400;
+	transform: translateX(10px);
+}
+
+.bg-orange {
+	background-color: #ff5400;
+}
+
+.banner {
+	background: linear-gradient(
+			to bottom,
+			rgba(0, 0, 0, 0.711),
+			rgba(0, 0, 0, 0.671)
+		),
+		url("./src/image/banner.jpg");
+	background-size: cover;
+	object-fit: cover;
+	background-repeat: no-repeat;
+}
+
+.darkBlue {
+	color: #192a56;
+}
+
+.rot {
+	background: linear-gradient(
+		to bottom,
+		rgba(0, 0, 0, 0.661),
+		rgba(0, 0, 0, 0.724)
+	) !important;
+}
+
+.bgDark {
+	background-color: #192a56;
+}
+
+.font {
+	font-family: "Poppins", sans-serif;
+}
+
+@media (min-width: 768px) {
+	.menu,
+	#cancel,
+	#nav {
+		display: none !important;
+		opacity: 0;
+	}
+}
+
+.bg {
+	background: linear-gradient(
+			to bottom,
+			rgba(0, 0, 0, 0.561),
+			rgba(0, 0, 0, 0.524)
+		),
+		url("./src/image/rot2.jpeg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	object-fit: contain;
+}
+
+a:active {
+	color: #ff5400;
+}
+
+a.active{
+	color: #ff5400;
+}
+
+.line {
+	transform: translateX(4rem);
+	transition: all 0.6s ease-in;
+}
+
+.a:hover {
+	color: #ff5400;
+}
+
+.linhov:hover ~ .line {
+	transform: translateX(0);
+}
+
+.linn {
+	transform: translateX(10rem);
+	transition: all 0.6s ease-in;
+}
+
+.linhov:hover ~ .linn {
+	transform: translateX(0);
+}
+
+.modal {
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.modalPar {
+	background: linear-gradient(
+		to bottom,
+		rgba(0, 0, 0, 0.688),
+		rgba(0, 0, 0, 0.83)
+	);
+}
+
+.home {
+    background:linear-gradient(to bottom, rgba(0, 0, 0, 0.626), rgba(0, 0, 0, 0.689)), url("./image/jem.jpeg");
+    object-fit: contain;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+/* whatsapp */
+
+
+.whatsapp{
+    bottom: 2rem;
+    right: 2rem;
+  position: fixed;
+  height: 80px;
+  /* width: 100%; */
+  border-radius: 50%;
+}
+.chatbox-cont {
+  width: fit-content;
+  padding-bottom: 5rem;
+  border-radius: 40px;
+  background-color: #f6fdf9;
+  position: fixed;
+  box-shadow: rgba(99, 99, 99, 0.168) 0px 2px 6px 0px;
+  bottom: 1rem;
+  right: .5rem;
+}
+
+@media (min-width:768px) {
+    .chatbox-cont{
+        width: 30rem;
+    }
+}
+
+.chatbox-head {
+  background-color: var(--Green);
+  height: 10vh;
+  border-top-left-radius: 40px;
+  border-top-right-radius: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.6rem;
+}
+.logo {
+  width: 38%;
+}
+.fa-circle-xmark {
+  font-size: 28px;
+}
+.chatbox-body {
+  padding: 1rem;
+  position: relative;
+}
+.message-box {
+  margin: 1rem;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  border-radius: 20px;
+  background-color: var(--White);
+  padding: 1rem;
+}
+.message-box p {
+  margin-top: 1rem;
+}
+
+.openchat-box {
+  position: absolute;
+  background-color: var(--Green);
+  padding: 1rem;
+  border-radius: 30px;
+  color: var(--White);
+  margin-top: 0.5rem;
+  right: 6%;
+  display: flex;
+  align-items: center;
+}
+.openchat-box i {
+  padding-left: 0.6rem;
+  color: var(--White);
+}
+
+/* Animation */ 
+
+.bottom{
+    position: relative;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: 1s all ease;
+  }
+  
+  .bottom.active{
+    transform: translateY(0) !important;
+    opacity: 1;
+  }
+
+  
+.top{
+    position: relative;
+    transform: translateY(-150px);
+    opacity: 0;
+    transition: 1s all ease;
+  }
+  
+  .top.active{
+    transform: translateY(0) !important;
+    opacity: 1;
+  }
+
+  
+.left{
+    position: relative;
+    transform: translateX(-150px);
+    opacity: 0;
+    transition: 1s all ease;
+  }
+  
+  .left.active{
+    transform: translateX(0) !important;
+    opacity: 1;
+  }
+
+  
+.right{
+    position: relative;
+    transform: translateX(150px);
+    opacity: 0;
+    transition: 1s all ease;
+  }
+  
+  .right.active{
+    transform: translateX(0) !important;
+    opacity: 1;
+  }
+
+
+  .scale{
+    position: relative;
+    transform: scale(0.5);
+    opacity: 0;
+    transition: 1s all ease;
+  }
+  
+  .scale.active{
+    transform: scale(1) !important;
+    opacity: 1;
+  }
